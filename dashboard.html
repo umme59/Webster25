@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Alchemist Grimoire</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-900 via-indigo-900 to-black text-white font-sans min-h-screen flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-black bg-opacity-70 p-6 flex flex-col">
+    <h2 class="text-2xl font-bold text-purple-300 mb-8">Alchemist Grimoire</h2>
+    <nav class="flex flex-col space-y-4">
+      <a href="#" class="hover:text-purple-400">🏠 Dashboard</a>
+      <a href="#" class="hover:text-purple-400">📅 Schedules</a>
+      <a href="#" class="hover:text-purple-400">🔔 Notifications</a>
+      <a href="#" class="hover:text-purple-400">📊 Reports</a>
+      <a href="#" class="hover:text-purple-400">🤖 AI Chatbot</a>
+      <a href="#" class="hover:text-purple-400">⚙️ Settings</a>
+      <a href="#" class="hover:text-red-400 mt-6">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Dashboard -->
+  <main class="flex-1 p-8 overflow-y-auto">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold">Dashboard</h1>
+      <button class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg font-semibold">
+        ➕ Add Medicine
+      </button>
+    </div>
+
+    <!-- Upcoming Dose + Quick Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+
+      <!-- Upcoming Dose -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-2">Next Dose</h2>
+        <p class="text-lg">💊 Paracetamol 500mg</p>
+        <p class="text-gray-300">Time: 8:00 PM</p>
+        <p class="text-gray-400">Status: Pending</p>
+      </div>
+
+      <!-- Taken Doses -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-2">Today’s Progress</h2>
+        <p class="text-green-400 text-lg">✔ Taken: 2</p>
+        <p class="text-red-400 text-lg">❌ Missed: 1</p>
+      </div>
+
+      <!-- Adherence Rate -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-2">Adherence Rate</h2>
+        <p class="text-3xl font-bold text-purple-300">85%</p>
+        <p class="text-gray-400">Last 7 Days</p>
+      </div>
+    </div>
+
+    <!-- Charts + Calendar -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+
+      <!-- Placeholder Chart -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Adherence Trends</h2>
+        <div class="h-64 flex items-center justify-center text-gray-400">
+          📊 Chart Placeholder
+        </div>
+      </div>
+
+      <!-- Calendar -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Calendar</h2>
+        <div class="h-64 flex items-center justify-center text-gray-400">
+          📅 Calendar Placeholder
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Insights + Notifications -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- AI Insights -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">AI Insights</h2>
+        <p class="text-yellow-300 mb-2">⚠ You missed 3 doses this week.</p>
+        <p class="text-gray-300">Try setting reminders closer to meal times for better adherence.</p>
+      </div>
+
+      <!-- Notifications -->
+      <div class="bg-black bg-opacity-60 p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Notifications</h2>
+        <ul class="space-y-2">
+          <li class="bg-gray-800 px-4 py-2 rounded-lg">🔔 Reminder: Vitamin C - 10:00 AM</li>
+          <li class="bg-gray-800 px-4 py-2 rounded-lg">🔔 Reminder: Paracetamol - 8:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
