@@ -17,7 +17,7 @@ export default function Home() {
         </p>
         <div className="mt-6 flex justify-center">
           <button className="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-yellow-400/50 hover:scale-105 transition-all">
-            Begin Your Journey
+            Get Started
           </button>
         </div>
       </section>
