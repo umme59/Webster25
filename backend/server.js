@@ -21,6 +21,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: true }));
 app.use(logger);
 
 // routes
